@@ -6,7 +6,7 @@
 
 ## Descrição
 
-O discente implementa uma simulação gravitacional N-Corpos nas quatro versões abaixo, analisa o desempenho e discute brevemente as escolhas de paralelização à luz dos padrões do Mattson et al.
+O discente implementa uma simulação gravitacional N-Corpos nas duas versões abaixo, analisa o desempenho e discute brevemente as escolhas de paralelização à luz dos padrões do Mattson et al.
 
 ---
 
@@ -15,13 +15,13 @@ O discente implementa uma simulação gravitacional N-Corpos nas quatro versões
 **Versão 1 — Sequencial** (baseline)
 Implementar o algoritmo direto O(N²) em C/C++. Medir o tempo para N = 1k, 2k e 4k partículas.
 
-**Versão 2 — MPI**
+<!--**Versão 2 — MPI**
 Distribuir as partículas entre processos (*Geometric Decomposition*). Usar `MPI_Allgather` para compartilhar posições e `MPI_Reduce` para consolidar forças. Testar com 1, 2, 4 e 8 processos.
 
 **Versão 3 — OpenMP**
 Paralelizar o laço de cálculo de forças com `#pragma omp parallel for reduction`. Testar com 1, 2, 4 e 8 threads.
-
-**Versão 4 — HIP (GPU)**
+-->
+**Versão 2 — HIP (GPU)**
 Implementar o kernel de cálculo de forças em HIP, onde cada thread GPU é responsável por uma partícula. Gerenciar as transferências de memória host↔device com `hipMemcpy`. Testar com diferentes tamanhos de bloco (`blockDim`: 64, 128, 256) e comparar com as versões CPU.
 
 ```cpp
