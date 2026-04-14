@@ -78,8 +78,13 @@ Em resumo: é um problema **fácil de paralelizar na primeira versão**, mas **d
 
 ---
 ## Adicionais feitos ao longo da pesquisa
-- **14/04:** Simplificar e incluir um conceito de didática e ensino, buscando um teor de introdução à parelização de aplicações. Assim, facilitando a compreensão do processo de adaptação de algoritmos sequenciais para ambientes de alto desempenho.
+- **14/04:** <br>
+Simplificar e incluir um conceito de didática e ensino, buscando um teor de introdução à parelização de aplicações. Assim, facilitando a compreensão do processo de adaptação de algoritmos sequenciais para ambientes de alto desempenho. <br>
+Utilizar o artigo "Study and analysis of parallel N-body simulations" e seus algoritmos como base da implementação.
+
 
 ## Bibliografia
 
 MATTSON, Timothy G.; SANDERS, Beverly A.; MASSINGILL, Berna L. **Patterns for Parallel Programming**. Boston: Addison-Wesley, 2005. (Software Patterns Series).
+
+ARCENCIO, Guilherme G.; GUARDIA, Hélio Crestana. Study and analysis of parallel N-body simulations. In: ESCOLA REGIONAL DE ALTO DESEMPENHO DE SÃO PAULO (ERAD-SP), 15. , 2024, Rio Claro/SP. Anais [...]. Porto Alegre: Sociedade Brasileira de Computação, 2024 . p. 5-8. DOI: https://doi.org/10.5753/eradsp.2024.239679. 
